@@ -1,0 +1,101 @@
+{
+  "$schema": "../schemas/verification.schema.json",
+  "format": "git-template-verification",
+  "formatVersion": "0.2.0",
+  "status": "passed",
+  "checkedAt": "2026-11-02T17:44:11.122Z",
+  "sourceCommit": "6ed30215ac57031f4013e44920ef9c89134a4f5d",
+  "sourceDigest": "a45acebea12e1207c7d1480617eeec1740a24d504034a9c1562df31e5ba38808",
+  "environment": {
+    "platform": "linux",
+    "arch": "x64",
+    "node": "v24.16.0",
+    "packageManager": "pnpm 9.15.4",
+    "cleanDirectory": true,
+    "localGitClone": true
+  },
+  "checks": [
+    {
+      "id": "install",
+      "cwd": ".",
+      "argv": [
+        "pnpm",
+        "install",
+        "--frozen-lockfile"
+      ],
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-11-02T17:33:58.332Z",
+      "finishedAt": "2026-11-02T17:34:02.667Z"
+    },
+    {
+      "id": "typecheck",
+      "cwd": ".",
+      "argv": [
+        "pnpm",
+        "run",
+        "typecheck"
+      ],
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-11-02T17:34:02.667Z",
+      "finishedAt": "2026-11-02T17:34:06.221Z"
+    },
+    {
+      "id": "lint",
+      "cwd": ".",
+      "argv": [
+        "pnpm",
+        "run",
+        "lint"
+      ],
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-11-02T17:34:06.222Z",
+      "finishedAt": "2026-11-02T17:34:10.654Z"
+    },
+    {
+      "id": "test",
+      "cwd": ".",
+      "argv": [
+        "pnpm",
+        "run",
+        "test"
+      ],
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-11-02T17:34:10.654Z",
+      "finishedAt": "2026-11-02T17:34:11.774Z"
+    },
+    {
+      "id": "build",
+      "cwd": ".",
+      "argv": [
+        "pnpm",
+        "run",
+        "build"
+      ],
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-11-02T17:34:11.774Z",
+      "finishedAt": "2026-11-02T17:34:37.858Z"
+    }
+  ],
+  "services": [
+    {
+      "id": "web",
+      "status": "passed",
+      "stopped": true,
+      "checkedAt": "2026-11-02T17:44:11.122Z",
+      "reason": "本地 Linux Git 克隆生产启动；80 条路径与 244 个运行素材摘要通过；服务已停止。"
+    }
+  ],
+  "limitations": [
+    "参考站图片与设计商业许可尚未确认；listed=false。",
+    "浏览器覆盖全部中文桌面页、主要英文页、三端截图与 320px，未穷举所有设备/语言/控件组合。",
+    "代表动效和真实评价拖动已实测，未逐帧量化全部轨迹、包装几何与光照，不能声称全量逐帧一致。",
+    "减少动态效果分支已实现，未实际切换操作系统设置。",
+    "未知路径使用客户端本地化错误页，HTTP 已验证真实 404；浏览器另行检查页面。",
+    "表单、购物车与结算为本地演示，没有真实付款、账户、邮件或付费文件交付。"
+  ]
+}
