@@ -1,7 +1,7 @@
 {
   "name": "shelfline-template",
   "private": true,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "packageManager": "pnpm@9.15.4",
   "scripts": {
@@ -31,7 +31,7 @@
     "react-dom": "19.2.5"
   },
   "exports": {
-    "./template": "./src/features/site-templates/catalog/shelfline/meta.tsxx",
+    "./template": "./src/features/site-templates/catalog/shelfline/meta.tsx",
     "./host": "./src/features/site-templates/catalog/shelfline/host.tsx",
     "./package.json": "./package.json"
   },
