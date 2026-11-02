@@ -1,0 +1,8 @@
+'use client'
+import type {SiteTemplatePageProps} from '../../../types'
+import {Shell,TagLink} from '../components/Shell'
+import {PageHero} from '../components/PageHero'
+import {CourseSection,FAQ,CTA} from '../components/sections'
+import {useCopy} from '../components/context'
+export default function CoursesPage(props:SiteTemplatePageProps&{detail?:boolean}){return <Shell {...props} slug={props.detail?'courses/launch-in-30-days':'courses'}><Courses detail={props.detail}/></Shell>}
+function Courses({detail}:{detail?:boolean}){const t=useCopy();return <><PageHero number="03" eyebrow={t('在线课程','COURSES')} title={detail?t('30 天 / 完成产品发布','Launch in 30 Days'):t('从第一个想法 / 到第一笔成交','From your first idea to your first sale.')} description={t('8 节课程，2 小时 20 分钟。定位、页面、价格和发布邮件，每一步都有练习。','Eight lessons, 2 h 20 min. Positioning, the page, the price and the launch emails, with worksheets at every step.')}/><CourseSection detail={detail}/>{detail&&<section className="sl-section"><h2>{t('你将获得','What you get')}</h2><div className="sl-house-rules">{[[t('视频课程','Video lessons'),t('在不同设备上学习，每节课只解决一个问题。','Learn on any device, one job per lesson.')],[t('配套练习表','Worksheets'),t('每个模块结束时，用一张表完成实际练习。','A PDF worksheet at the end of each module.')],[t('交流社区','Private community'),t('交流你的发布计划，提出问题。','Share your launch and ask questions.')],[t('终身更新','Lifetime access'),t('示例课程说明，实际服务由商店提供。','Sample course description; the live store provides the actual service.')]].map(([title,body])=><article key={title}><h3>{title}</h3><p>{body}</p></article>)}</div><div className="sl-actions"><TagLink path="products/launch-course">{t('查看课程商品','View course product')}</TagLink></div></section>}<FAQ/><CTA/></>}

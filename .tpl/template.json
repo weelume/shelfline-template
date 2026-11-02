@@ -1,0 +1,433 @@
+{
+  "$schema": "./schemas/template.schema.json",
+  "format": "git-template",
+  "formatVersion": "0.2.0",
+  "id": "shelfline",
+  "version": "1.0.0",
+  "gitUrl": "https://github.com/weelume/shelfline-template",
+  "name": "Shelfline · 创作者数字商店",
+  "localizedNames": {
+    "zh": "Shelfline · 创作者数字商店",
+    "en": "Shelfline · Creator digital goods store"
+  },
+  "summary": "九款商品、六类货架、三组套装、课程、手记与政策的双语数字商店；支持立体商品、筛选与本地购物车演示。",
+  "sceneId": "online-store",
+  "listed": false,
+  "tags": [
+    "数字商品",
+    "立体货架",
+    "小票设计",
+    "中英文",
+    "PC / iPad / H5"
+  ],
+  "stack": [
+    "Next.js",
+    "React",
+    "TypeScript",
+    "Framer Motion"
+  ],
+  "accentColor": "#ff6926",
+  "cover": "assets/desktop-home.webp",
+  "screenshots": [
+    {
+      "src": "assets/desktop-home.webp",
+      "alt": "Shelfline desktop home",
+      "device": "desktop",
+      "width": 1430,
+      "height": 993,
+      "surfaceId": "site",
+      "pageSlug": ""
+    },
+    {
+      "src": "assets/desktop-products.webp",
+      "alt": "Shelfline desktop products",
+      "device": "desktop",
+      "width": 1430,
+      "height": 993,
+      "surfaceId": "site",
+      "pageSlug": "products"
+    },
+    {
+      "src": "assets/desktop-notes.webp",
+      "alt": "Shelfline desktop notes",
+      "device": "desktop",
+      "width": 1430,
+      "height": 993,
+      "surfaceId": "site",
+      "pageSlug": "notes"
+    },
+    {
+      "src": "assets/desktop-contact.webp",
+      "alt": "Shelfline desktop contact",
+      "device": "desktop",
+      "width": 1430,
+      "height": 993,
+      "surfaceId": "site",
+      "pageSlug": "contact"
+    },
+    {
+      "src": "assets/tablet-home.webp",
+      "alt": "Shelfline tablet home",
+      "device": "tablet",
+      "width": 824,
+      "height": 1166,
+      "surfaceId": "site",
+      "pageSlug": ""
+    },
+    {
+      "src": "assets/tablet-products.webp",
+      "alt": "Shelfline tablet products",
+      "device": "tablet",
+      "width": 824,
+      "height": 1166,
+      "surfaceId": "site",
+      "pageSlug": "products"
+    },
+    {
+      "src": "assets/tablet-notes.webp",
+      "alt": "Shelfline tablet notes",
+      "device": "tablet",
+      "width": 824,
+      "height": 1166,
+      "surfaceId": "site",
+      "pageSlug": "notes"
+    },
+    {
+      "src": "assets/tablet-contact.webp",
+      "alt": "Shelfline tablet contact",
+      "device": "tablet",
+      "width": 824,
+      "height": 1166,
+      "surfaceId": "site",
+      "pageSlug": "contact"
+    },
+    {
+      "src": "assets/mobile-home.webp",
+      "alt": "Shelfline mobile home",
+      "device": "mobile",
+      "width": 380,
+      "height": 822,
+      "surfaceId": "site",
+      "pageSlug": ""
+    },
+    {
+      "src": "assets/mobile-products.webp",
+      "alt": "Shelfline mobile products",
+      "device": "mobile",
+      "width": 380,
+      "height": 822,
+      "surfaceId": "site",
+      "pageSlug": "products"
+    },
+    {
+      "src": "assets/mobile-notes.webp",
+      "alt": "Shelfline mobile notes",
+      "device": "mobile",
+      "width": 380,
+      "height": 822,
+      "surfaceId": "site",
+      "pageSlug": "notes"
+    },
+    {
+      "src": "assets/mobile-contact.webp",
+      "alt": "Shelfline mobile contact",
+      "device": "mobile",
+      "width": 380,
+      "height": 822,
+      "surfaceId": "site",
+      "pageSlug": "contact"
+    }
+  ],
+  "surfaces": [
+    {
+      "id": "site",
+      "name": "创作商店",
+      "platform": "pc",
+      "locales": [
+        "zh",
+        "en"
+      ],
+      "pages": [
+        {
+          "slug": "",
+          "title": "首页",
+          "localizedTitles": {
+            "en": "Home"
+          }
+        },
+        {
+          "slug": "404",
+          "title": "未找到页面",
+          "localizedTitles": {
+            "en": "404"
+          }
+        },
+        {
+          "slug": "about",
+          "title": "关于工作室",
+          "localizedTitles": {
+            "en": "about"
+          }
+        },
+        {
+          "slug": "affiliates",
+          "title": "合作伙伴",
+          "localizedTitles": {
+            "en": "affiliates"
+          }
+        },
+        {
+          "slug": "bundles",
+          "title": "组合套装",
+          "localizedTitles": {
+            "en": "bundles"
+          }
+        },
+        {
+          "slug": "bundles/creator-pack",
+          "title": "创作者内容组合",
+          "localizedTitles": {
+            "en": "The Creator Pack"
+          }
+        },
+        {
+          "slug": "bundles/designer-kit",
+          "title": "设计师工具组合",
+          "localizedTitles": {
+            "en": "The Designer Kit"
+          }
+        },
+        {
+          "slug": "bundles/launch-stack",
+          "title": "产品发布组合",
+          "localizedTitles": {
+            "en": "The Launch Stack"
+          }
+        },
+        {
+          "slug": "checkout",
+          "title": "演示结算",
+          "localizedTitles": {
+            "en": "checkout"
+          }
+        },
+        {
+          "slug": "contact",
+          "title": "联系",
+          "localizedTitles": {
+            "en": "contact"
+          }
+        },
+        {
+          "slug": "courses",
+          "title": "在线课程",
+          "localizedTitles": {
+            "en": "Courses"
+          }
+        },
+        {
+          "slug": "courses/launch-in-30-days",
+          "title": "courses · launch in 30 days",
+          "localizedTitles": {
+            "en": "courses · launch in 30 days"
+          }
+        },
+        {
+          "slug": "free",
+          "title": "免费指南",
+          "localizedTitles": {
+            "en": "free"
+          }
+        },
+        {
+          "slug": "licence",
+          "title": "使用授权",
+          "localizedTitles": {
+            "en": "licence"
+          }
+        },
+        {
+          "slug": "notes",
+          "title": "工作室手记",
+          "localizedTitles": {
+            "en": "notes"
+          }
+        },
+        {
+          "slug": "notes/free-download-funnel",
+          "title": "notes · free download funnel",
+          "localizedTitles": {
+            "en": "notes · free download funnel"
+          }
+        },
+        {
+          "slug": "notes/price-ladders",
+          "title": "notes · price ladders",
+          "localizedTitles": {
+            "en": "notes · price ladders"
+          }
+        },
+        {
+          "slug": "notes/update-policy",
+          "title": "notes · update policy",
+          "localizedTitles": {
+            "en": "notes · update policy"
+          }
+        },
+        {
+          "slug": "privacy",
+          "title": "隐私政策",
+          "localizedTitles": {
+            "en": "privacy"
+          }
+        },
+        {
+          "slug": "products",
+          "title": "商品货架",
+          "localizedTitles": {
+            "en": "products"
+          }
+        },
+        {
+          "slug": "products/brand-fonts",
+          "title": "Ledger Sans 字体家族",
+          "localizedTitles": {
+            "en": "Ledger Sans"
+          }
+        },
+        {
+          "slug": "products/canva-social-kit",
+          "title": "Canva 社交内容套件",
+          "localizedTitles": {
+            "en": "Social Kit for Canva"
+          }
+        },
+        {
+          "slug": "products/email-swipes",
+          "title": "100 封产品发布邮件",
+          "localizedTitles": {
+            "en": "100 Launch Emails"
+          }
+        },
+        {
+          "slug": "products/figma-ui-kit",
+          "title": "Aurora UI 设计套件",
+          "localizedTitles": {
+            "en": "Aurora UI Kit"
+          }
+        },
+        {
+          "slug": "products/film-presets",
+          "title": "胶片质感预设",
+          "localizedTitles": {
+            "en": "Film Look Presets"
+          }
+        },
+        {
+          "slug": "products/icon-set",
+          "title": "Outline 线性图标 1.0",
+          "localizedTitles": {
+            "en": "Outline Icons 1.0"
+          }
+        },
+        {
+          "slug": "products/launch-course",
+          "title": "30 天完成产品发布",
+          "localizedTitles": {
+            "en": "Launch in 30 Days"
+          }
+        },
+        {
+          "slug": "products/notion-studio-os",
+          "title": "Notion 工作室系统",
+          "localizedTitles": {
+            "en": "Studio OS for Notion"
+          }
+        },
+        {
+          "slug": "products/pricing-playbook",
+          "title": "产品定价手册",
+          "localizedTitles": {
+            "en": "The Pricing Playbook"
+          }
+        },
+        {
+          "slug": "refunds",
+          "title": "退款政策",
+          "localizedTitles": {
+            "en": "refunds"
+          }
+        },
+        {
+          "slug": "reviews",
+          "title": "买家回声",
+          "localizedTitles": {
+            "en": "reviews"
+          }
+        },
+        {
+          "slug": "terms",
+          "title": "服务条款",
+          "localizedTitles": {
+            "en": "terms"
+          }
+        },
+        {
+          "slug": "thank-you",
+          "title": "感谢页",
+          "localizedTitles": {
+            "en": "thank you"
+          }
+        },
+        {
+          "slug": "types/courses",
+          "title": "在线课程",
+          "localizedTitles": {
+            "en": "Courses"
+          }
+        },
+        {
+          "slug": "types/ebooks",
+          "title": "电子书与指南",
+          "localizedTitles": {
+            "en": "Ebooks & guides"
+          }
+        },
+        {
+          "slug": "types/fonts",
+          "title": "字体",
+          "localizedTitles": {
+            "en": "Fonts"
+          }
+        },
+        {
+          "slug": "types/icons",
+          "title": "图标与素材",
+          "localizedTitles": {
+            "en": "Icons & assets"
+          }
+        },
+        {
+          "slug": "types/presets",
+          "title": "预设与 LUT",
+          "localizedTitles": {
+            "en": "Presets & LUTs"
+          }
+        },
+        {
+          "slug": "types/templates",
+          "title": "设计模板",
+          "localizedTitles": {
+            "en": "Templates"
+          }
+        }
+      ]
+    }
+  ],
+  "license": {
+    "type": "restricted",
+    "file": "docs/LICENSE.md",
+    "summary": "独立实现；参考图片与内容的商业许可尚未确认；字体保留各自许可。",
+    "redistributionAllowed": false
+  }
+}

@@ -1,0 +1,139 @@
+{
+  "format": "git-template-customization",
+  "formatVersion": "0.2.0",
+  "entries": [
+    {
+      "id": "brand",
+      "title": "品牌与联系方式",
+      "description": "按职责修改实际源码，保持双语和演示边界。",
+      "files": [
+        {
+          "path": "src/features/site-templates/catalog/shelfline/config/brand.ts",
+          "kind": "file",
+          "purpose": "品牌与联系方式"
+        }
+      ],
+      "constraints": [
+        "保留已有修改；不引入未批准依赖",
+        "商品引用、价格关系、语言和素材许可保持一致"
+      ],
+      "checks": [
+        "typecheck",
+        "lint",
+        "test",
+        "build"
+      ]
+    },
+    {
+      "id": "content",
+      "title": "商品、套装、课程与双语内容",
+      "description": "按职责修改实际源码，保持双语和演示边界。",
+      "files": [
+        {
+          "path": "src/features/site-templates/catalog/shelfline/content",
+          "kind": "directory",
+          "purpose": "商品、套装、课程与双语内容"
+        }
+      ],
+      "constraints": [
+        "保留已有修改；不引入未批准依赖",
+        "商品引用、价格关系、语言和素材许可保持一致"
+      ],
+      "checks": [
+        "typecheck",
+        "lint",
+        "test",
+        "build"
+      ]
+    },
+    {
+      "id": "theme",
+      "title": "主题令牌",
+      "description": "按职责修改实际源码，保持双语和演示边界。",
+      "files": [
+        {
+          "path": "src/features/site-templates/catalog/shelfline/tokens.css",
+          "kind": "file",
+          "purpose": "主题令牌"
+        }
+      ],
+      "constraints": [
+        "保留已有修改；不引入未批准依赖",
+        "商品引用、价格关系、语言和素材许可保持一致"
+      ],
+      "checks": [
+        "typecheck",
+        "lint",
+        "test",
+        "build"
+      ]
+    },
+    {
+      "id": "motion",
+      "title": "场景动效与交互",
+      "description": "按职责修改实际源码，保持双语和演示边界。",
+      "files": [
+        {
+          "path": "src/features/site-templates/catalog/shelfline/components",
+          "kind": "directory",
+          "purpose": "场景动效与交互"
+        }
+      ],
+      "constraints": [
+        "保留已有修改；不引入未批准依赖",
+        "商品引用、价格关系、语言和素材许可保持一致"
+      ],
+      "checks": [
+        "typecheck",
+        "lint",
+        "test",
+        "build"
+      ]
+    },
+    {
+      "id": "pages",
+      "title": "页面组合与路由",
+      "description": "按职责修改实际源码，保持双语和演示边界。",
+      "files": [
+        {
+          "path": "src/features/site-templates/catalog/shelfline/pages",
+          "kind": "directory",
+          "purpose": "页面组合与路由"
+        }
+      ],
+      "constraints": [
+        "保留已有修改；不引入未批准依赖",
+        "商品引用、价格关系、语言和素材许可保持一致"
+      ],
+      "checks": [
+        "typecheck",
+        "lint",
+        "test",
+        "build"
+      ]
+    },
+    {
+      "id": "assets",
+      "title": "图片与字体",
+      "description": "按职责修改实际源码，保持双语和演示边界。",
+      "files": [
+        {
+          "path": "public/templates/shelfline",
+          "kind": "directory",
+          "purpose": "图片与字体"
+        }
+      ],
+      "constraints": [
+        "保留已有修改；不引入未批准依赖",
+        "商品引用、价格关系、语言和素材许可保持一致"
+      ],
+      "checks": [
+        "typecheck",
+        "lint",
+        "test",
+        "build"
+      ]
+    }
+  ],
+  "$schema": "./schemas/customization.schema.json"
+}
