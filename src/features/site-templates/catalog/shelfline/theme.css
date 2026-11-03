@@ -1,11 +1,11 @@
 @import url('/templates/shelfline/fonts/misans/MiSans-Regular.css');
 @import url('/templates/shelfline/fonts/misans/MiSans-Bold.css');
 @import './tokens.css';
+@import './scrollbars.css';
 @font-face{font-family:'Shelfline Poppins';src:url('/templates/shelfline/fonts/poppins-latin-400.woff2') format('woff2');font-weight:400;font-display:swap}
 @font-face{font-family:'Shelfline Poppins';src:url('/templates/shelfline/fonts/poppins-latin-600.woff2') format('woff2');font-weight:600;font-display:swap}
 @font-face{font-family:'Shelfline Poppins';src:url('/templates/shelfline/fonts/poppins-latin-700.woff2') format('woff2');font-weight:700;font-display:swap}
-.shelfline *{box-sizing:border-box;scrollbar-width:thin;scrollbar-color:var(--sl-scroll-thumb) transparent}
-.shelfline *::-webkit-scrollbar{width:7px;height:7px}.shelfline *::-webkit-scrollbar-thumb{background:var(--sl-scroll-thumb);border-radius:7px}.shelfline *::-webkit-scrollbar-thumb:hover{background:var(--sl-scroll-hover)}
+.shelfline *{box-sizing:border-box}
 .shelfline :where(h1,h2,h3,p,ul,ol,blockquote,dl,dd){margin:0}.shelfline :where(button,input,select,textarea){font:inherit;color:inherit}.shelfline button{cursor:pointer}.shelfline a{color:inherit;text-decoration:none}.shelfline img{max-width:100%;display:block}.shelfline button{background:none;border:0}.shelfline :focus-visible{outline:2px solid var(--sl-orange);outline-offset:5px}.shelfline p+p{margin-top:18px}.shelfline h3{font-size:clamp(20px,2vw,28px);line-height:1.35}.shelfline del{opacity:.5;font-size:.55em}.shelfline button:disabled{opacity:.45;cursor:not-allowed}
 .sl-skip{position:fixed;top:-100px;left:16px;background:var(--sl-orange);padding:10px;z-index:1000}.sl-skip:focus{top:10px}
 .sl-header{height:78px;padding:0 var(--sl-gutter);display:flex;align-items:center;justify-content:space-between;gap:22px;background:#231713ed;color:var(--sl-bone);position:sticky;top:0;z-index:60;border-bottom:1px solid #f2eadb0a;backdrop-filter:blur(18px)}

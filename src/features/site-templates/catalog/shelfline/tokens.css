@@ -1,3 +1,15 @@
-.shelfline{--sl-night:#231713;--sl-ink:#2c241f;--sl-bone:#f2eadb;--sl-paper:#faf6ed;--sl-orange:#ff6926;--sl-stone:#b6aa99;--sl-line:#39271a26;--sl-glass:linear-gradient(140deg,#ffffffad,#fff7e84d);--sl-shadow:0 18px 40px #39271912;--sl-radius:10px;--sl-width:1328px;--sl-gutter:clamp(20px,4vw,56px);--sl-space:clamp(64px,8vw,116px);--sl-display:clamp(28px,3.7vw,44px);--sl-heading:clamp(24px,3vw,36px);--sl-body:16px;--sl-ease:cubic-bezier(.2,.75,.2,1);--sl-scroll-track:#eee4d4;--sl-scroll-thumb:#b7a48e;--sl-scroll-hover:#8c755d;color:var(--sl-ink);background:var(--sl-bone);font-family:'Shelfline Poppins','Shelfline MiSans',sans-serif;font-size:var(--sl-body);line-height:1.8;min-height:100vh}
-html[data-shelfline]{scrollbar-width:thin;scrollbar-color:#b7a48e #eee4d4;scroll-behavior:smooth;scroll-padding-top:90px;background:#231713}
-html[data-shelfline]::-webkit-scrollbar{width:9px}html[data-shelfline]::-webkit-scrollbar-track{background:#eee4d4}html[data-shelfline]::-webkit-scrollbar-thumb{background:#b7a48e;border:2px solid #eee4d4;border-radius:9px}html[data-shelfline]::-webkit-scrollbar-thumb:hover{background:#8c755d}
+.shelfline{--sl-night:#231713;--sl-ink:#2c241f;--sl-bone:#f2eadb;--sl-paper:#faf6ed;--sl-orange:#ff6926;--sl-stone:#b6aa99;--sl-line:#39271a26;--sl-glass:linear-gradient(140deg,#ffffffad,#fff7e84d);--sl-shadow:0 18px 40px #39271912;--sl-radius:10px;--sl-width:1328px;--sl-gutter:clamp(20px,4vw,56px);--sl-space:clamp(64px,8vw,116px);--sl-display:clamp(28px,3.7vw,44px);--sl-heading:clamp(24px,3vw,36px);--sl-body:16px;--sl-ease:cubic-bezier(.2,.75,.2,1);color:var(--sl-ink);background:var(--sl-bone);font-family:'Shelfline Poppins','Shelfline MiSans',sans-serif;font-size:var(--sl-body);line-height:1.8;min-height:100vh}
+html[data-shelfline],
+.shelfline {
+  --sl-scroll-size: 10px;
+  --sl-scroll-inner-size: 8px;
+  --sl-scroll-radius: 999px;
+  --sl-scroll-track: #2c2019;
+  --sl-scroll-thumb: #98795f;
+  --sl-scroll-hover: #bb9572;
+  --sl-scroll-active: #dbad80;
+  --sl-scroll-light-thumb: #b39b81;
+  --sl-scroll-light-hover: #8e7055;
+  --sl-scroll-light-active: #715239;
+}
+html[data-shelfline]{scroll-behavior:smooth;scroll-padding-top:90px;background:#231713}

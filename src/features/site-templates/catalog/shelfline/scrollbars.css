@@ -1,0 +1,106 @@
+/* 颜色沿用货架的木色。整页与内部容器分别配色，离开模板后根标记移除即恢复宿主样式。 */
+html[data-shelfline] {
+  scrollbar-width: thin;
+  scrollbar-color: var(--sl-scroll-thumb) var(--sl-scroll-track);
+}
+
+.shelfline {
+  --sl-scroll-area-thumb: var(--sl-scroll-light-thumb);
+  --sl-scroll-area-hover: var(--sl-scroll-light-hover);
+  --sl-scroll-area-active: var(--sl-scroll-light-active);
+}
+
+.shelfline * {
+  scrollbar-width: thin;
+  scrollbar-color: var(--sl-scroll-area-thumb) transparent;
+}
+
+.shelfline .sl-hero-shelves,
+.shelfline .sl-footer {
+  --sl-scroll-area-thumb: var(--sl-scroll-thumb);
+  --sl-scroll-area-hover: var(--sl-scroll-hover);
+  --sl-scroll-area-active: var(--sl-scroll-active);
+}
+
+/* 桌面预留原生滚动槽，打开抽屉锁住背景时不会横向跳动；触屏保留系统覆盖式滚动条。 */
+@media (hover: hover) and (pointer: fine) {
+  html[data-shelfline] {
+    scrollbar-gutter: stable;
+  }
+
+  .shelfline .sl-dialog {
+    scrollbar-gutter: stable;
+  }
+}
+
+/* 支持 WebKit 伪元素时使用精确宽度和状态；其他浏览器使用上面的标准属性。 */
+@supports selector(::-webkit-scrollbar) {
+  @media (hover: hover) and (pointer: fine) and (forced-colors: none) {
+    html[data-shelfline],
+    .shelfline * {
+      scrollbar-width: auto;
+      scrollbar-color: auto;
+    }
+
+    html[data-shelfline]::-webkit-scrollbar {
+      width: var(--sl-scroll-size);
+      height: var(--sl-scroll-size);
+    }
+
+    .shelfline *::-webkit-scrollbar {
+      width: var(--sl-scroll-inner-size);
+      height: var(--sl-scroll-inner-size);
+    }
+
+    html[data-shelfline]::-webkit-scrollbar-track,
+    html[data-shelfline]::-webkit-scrollbar-corner {
+      background: var(--sl-scroll-track);
+    }
+
+    .shelfline *::-webkit-scrollbar-track,
+    .shelfline *::-webkit-scrollbar-corner {
+      background: transparent;
+    }
+
+    html[data-shelfline]::-webkit-scrollbar-thumb {
+      min-height: 36px;
+      border: 2px solid var(--sl-scroll-track);
+      border-radius: var(--sl-scroll-radius);
+      background: var(--sl-scroll-thumb);
+      background-clip: padding-box;
+    }
+
+    .shelfline *::-webkit-scrollbar-thumb {
+      min-width: 32px;
+      min-height: 32px;
+      border: 2px solid transparent;
+      border-radius: var(--sl-scroll-radius);
+      background: var(--sl-scroll-area-thumb);
+      background-clip: padding-box;
+    }
+
+    html[data-shelfline]::-webkit-scrollbar-thumb:hover {
+      background-color: var(--sl-scroll-hover);
+    }
+
+    html[data-shelfline]::-webkit-scrollbar-thumb:active {
+      background-color: var(--sl-scroll-active);
+    }
+
+    .shelfline *::-webkit-scrollbar-thumb:hover {
+      background-color: var(--sl-scroll-area-hover);
+    }
+
+    .shelfline *::-webkit-scrollbar-thumb:active {
+      background-color: var(--sl-scroll-area-active);
+    }
+  }
+}
+
+@media (pointer: coarse), (forced-colors: active) {
+  html[data-shelfline],
+  .shelfline * {
+    scrollbar-width: auto;
+    scrollbar-color: auto;
+  }
+}
