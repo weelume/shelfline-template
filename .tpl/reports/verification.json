@@ -3,9 +3,9 @@
   "format": "git-template-verification",
   "formatVersion": "0.2.0",
   "status": "passed",
-  "checkedAt": "2026-11-02T18:01:21.927Z",
-  "sourceCommit": "f0cdd0535497645170eb0ca1403027266444097e",
-  "sourceDigest": "d2226febd71439415d30c7963cd10226c4ad1e1723f1c5bec4bed7140c1221c1",
+  "checkedAt": "2026-11-03T01:38:56.819Z",
+  "sourceCommit": "58c73b377931045ee20a0681bd913bcba83fb0c8",
+  "sourceDigest": "57eb4db6de518472bf249a802dfa6b838904006dad8413123887049275fa7ee1",
   "environment": {
     "platform": "linux",
     "arch": "x64",
@@ -16,19 +16,6 @@
   },
   "checks": [
     {
-      "id": "install",
-      "cwd": ".",
-      "argv": [
-        "pnpm",
-        "install",
-        "--frozen-lockfile"
-      ],
-      "status": "passed",
-      "exitCode": 0,
-      "startedAt": "2026-11-02T17:58:50.173Z",
-      "finishedAt": "2026-11-02T17:58:51.393Z"
-    },
-    {
       "id": "typecheck",
       "cwd": ".",
       "argv": [
@@ -38,8 +25,8 @@
       ],
       "status": "passed",
       "exitCode": 0,
-      "startedAt": "2026-11-02T17:58:51.393Z",
-      "finishedAt": "2026-11-02T17:58:54.265Z"
+      "startedAt": "2026-11-03T01:37:07.771Z",
+      "finishedAt": "2026-11-03T01:37:10.716Z"
     },
     {
       "id": "lint",
@@ -51,8 +38,8 @@
       ],
       "status": "passed",
       "exitCode": 0,
-      "startedAt": "2026-11-02T17:58:54.265Z",
-      "finishedAt": "2026-11-02T17:58:57.488Z"
+      "startedAt": "2026-11-03T01:37:10.716Z",
+      "finishedAt": "2026-11-03T01:37:13.591Z"
     },
     {
       "id": "test",
@@ -64,8 +51,8 @@
       ],
       "status": "passed",
       "exitCode": 0,
-      "startedAt": "2026-11-02T17:58:57.488Z",
-      "finishedAt": "2026-11-02T17:58:58.457Z"
+      "startedAt": "2026-11-03T01:37:13.591Z",
+      "finishedAt": "2026-11-03T01:37:14.550Z"
     },
     {
       "id": "build",
@@ -77,8 +64,8 @@
       ],
       "status": "passed",
       "exitCode": 0,
-      "startedAt": "2026-11-02T17:58:58.457Z",
-      "finishedAt": "2026-11-02T17:59:16.072Z"
+      "startedAt": "2026-11-03T01:37:14.550Z",
+      "finishedAt": "2026-11-03T01:37:31.829Z"
     }
   ],
   "services": [
@@ -86,8 +73,8 @@
       "id": "web",
       "status": "passed",
       "stopped": true,
-      "checkedAt": "2026-11-02T18:01:21.927Z",
-      "reason": "本地 Linux Git 克隆生产启动；80 条路径与 244 个运行素材摘要通过；服务已停止。"
+      "checkedAt": "2026-11-03T01:37:07.771Z",
+      "reason": "本地 Linux 干净 Git 克隆冻结安装与应用检查通过；80 条生产路径及 244 个运行素材 SHA256 通过；服务已停止。"
     }
   ],
   "limitations": [
