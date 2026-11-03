@@ -3,15 +3,15 @@
   "format": "git-template-verification",
   "formatVersion": "0.2.0",
   "status": "passed",
-  "checkedAt": "2026-11-03T01:38:56.819Z",
-  "sourceCommit": "58c73b377931045ee20a0681bd913bcba83fb0c8",
-  "sourceDigest": "57eb4db6de518472bf249a802dfa6b838904006dad8413123887049275fa7ee1",
+  "checkedAt": "2026-11-03T06:44:19.751Z",
+  "sourceCommit": "9d1727dec0fa505f0898ab0bd41424599ba080de",
+  "sourceDigest": "8283420629ed530e9c52c18b33a2d181bb0f8ee958e4a236affd131e788b958e",
   "environment": {
     "platform": "linux",
     "arch": "x64",
     "node": "v24.16.0",
     "packageManager": "pnpm 9.15.4",
-    "cleanDirectory": true,
+    "cleanDirectory": false,
     "localGitClone": true
   },
   "checks": [
@@ -25,8 +25,8 @@
       ],
       "status": "passed",
       "exitCode": 0,
-      "startedAt": "2026-11-03T01:37:07.771Z",
-      "finishedAt": "2026-11-03T01:37:10.716Z"
+      "startedAt": "2026-11-03T06:40:38.855Z",
+      "finishedAt": "2026-11-03T06:40:41.319Z"
     },
     {
       "id": "lint",
@@ -38,8 +38,8 @@
       ],
       "status": "passed",
       "exitCode": 0,
-      "startedAt": "2026-11-03T01:37:10.716Z",
-      "finishedAt": "2026-11-03T01:37:13.591Z"
+      "startedAt": "2026-11-03T06:40:41.319Z",
+      "finishedAt": "2026-11-03T06:40:44.262Z"
     },
     {
       "id": "test",
@@ -51,8 +51,8 @@
       ],
       "status": "passed",
       "exitCode": 0,
-      "startedAt": "2026-11-03T01:37:13.591Z",
-      "finishedAt": "2026-11-03T01:37:14.550Z"
+      "startedAt": "2026-11-03T06:40:44.262Z",
+      "finishedAt": "2026-11-03T06:40:44.729Z"
     },
     {
       "id": "build",
@@ -64,8 +64,8 @@
       ],
       "status": "passed",
       "exitCode": 0,
-      "startedAt": "2026-11-03T01:37:14.550Z",
-      "finishedAt": "2026-11-03T01:37:31.829Z"
+      "startedAt": "2026-11-03T06:40:44.729Z",
+      "finishedAt": "2026-11-03T06:41:04.964Z"
     }
   ],
   "services": [
@@ -73,16 +73,16 @@
       "id": "web",
       "status": "passed",
       "stopped": true,
-      "checkedAt": "2026-11-03T01:37:07.771Z",
-      "reason": "本地 Linux 干净 Git 克隆冻结安装与应用检查通过；80 条生产路径及 244 个运行素材 SHA256 通过；服务已停止。"
+      "checkedAt": "2026-11-03T06:44:19.749Z",
+      "reason": "本地生产预览 4 页 × 三端截图、图片与字体、无横向溢出通过；1.0.3 新构建四页真实浏览器复验通过。截图真实尺寸已解码核对；本次启动的三个预览进程已关闭。"
     }
   ],
   "limitations": [
     "参考站图片与设计商业许可尚未确认；listed=false。",
     "浏览器覆盖全部中文桌面页、主要英文页、三端截图与 320px，未穷举所有设备/语言/控件组合。",
     "代表动效和真实评价拖动已实测，未逐帧量化全部轨迹、包装几何与光照，不能声称全量逐帧一致。",
-    "减少动态效果分支已实现，未实际切换操作系统设置。",
     "未知路径使用客户端本地化错误页，HTTP 已验证真实 404；浏览器另行检查页面。",
-    "表单、购物车与结算为本地演示，没有真实付款、账户、邮件或付费文件交付。"
+    "表单、购物车与结算为本地演示，没有真实付款、账户、邮件或付费文件交付。",
+    "减少动态效果首次导航发现既有 React #418 水合告警；本次采用默认动画完成后的真实截图，未修改业务行为。"
   ]
 }
